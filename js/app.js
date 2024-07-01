@@ -16,3 +16,23 @@ btn.addEventListener("click", function (e) {
         e.target.innerHTML = btnText;
     }
 })
+
+
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
+
+//   console.log(Object.entries(person));
+
+let text = "";
+
+  for(let [a , b] of Object.entries(person)){
+
+    text += a + ": " + b + "<br>";
+    console.log(a);
+  }
+  
+  const myArray = Object.values(person);
+  document.getElementById("demo").innerHTML = text;
